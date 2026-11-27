@@ -25,3 +25,7 @@ VENDOR_RAMDISK_KERNEL_MODULES_DEST := $(TARGET_COPY_OUT_VENDOR_RAMDISK)/lib/modu
 PRODUCT_COPY_FILES += \
     $(call find-copy-subdir-files,*,$(VENDOR_RAMDISK_KERNEL_MODULES_ORIG)/,$(VENDOR_RAMDISK_KERNEL_MODULES_DEST))
 
+
+# Prebuilt kernel image
+PRODUCT_COPY_FILES += \
+    device/nothing/Tetris-kernel/Image:kernel

@@ -1,0 +1,15 @@
+// Prebuilt kernel: expose the checked-in UAPI headers under the name
+// that Lineage's vendor/lineage soong provides (used by hardware/mediatek).
+cc_library_headers {
+    name: "generated_kernel_headers",
+    export_include_dirs: ["kernel-headers"],
+    vendor_available: true,
+    recovery_available: true,
+}
+
+cc_library_headers {
+    name: "qti_kernel_headers",
+    export_include_dirs: ["kernel-headers"],
+    vendor_available: true,
+    recovery_available: true,
+}
